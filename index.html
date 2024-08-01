@@ -1,1 +1,39 @@
-<h1></h1>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simulation</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <p>
+            Source Code available <a href = "https://github.com/nexus-x86/IMO2024P5Simulation">here.</a>
+            <br><br>
+            Problem statement available <a href=" https://artofproblemsolving.com/wiki/index.php/2024_IMO_Problems/Problem_5">here.</a>
+            <br><br>
+            <!--N value input box, N rows, N -1 columns, N -2 monsters-->
+            The winning strategy surprisingly takes 3 moves. It is explained excellently by user v_Enhance <a href="https://artofproblemsolving.com/community/c6h3359777p31218774">here.</a>
+        </p>
+
+        <form id="nForm">
+            <p> There will be N rows, N - 1 columns, N - 2 monsters.</p>
+            <label for="nvalue">Value for n?: </label><br>
+            <input type="text" id="NVal" name = "findN"><br>
+            <input type="submit" value="Reload">
+        </form>
+
+        <form id = "simForm">
+            <input type="submit" value="Click me to run the winning strategy!">
+            <p>Red boxes represent unknown enemies while green boxes show the enemies the snail has found.
+                <br>
+                First enter a value for n in the input box then press reload then the run button.
+                <br>
+                Reload may be pressed multiple times to randomize the locations of the enemies.
+            </p>
+        </form>
+        
+
+        <div id="grid-container"></div>
+
+        <script src="app.js"></script>
+    </body>
+</html>
